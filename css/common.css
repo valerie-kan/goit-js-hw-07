@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/* ============= OWN STYLES ============= */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+h1, h2 {
+font-weight: 600;
+font-size: 24px;
+line-height: 1.3;
+letter-spacing: 0.04em;
+color: #2e2f42;
+}
+
+input {
+  letter-spacing: 0.04em;
+  border-radius: 8px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px 8px;
+  border: 1px solid #808080;
+}
+
+input:hover,
+input:focus {
+  border-color: #000000;
+  outline: transparent;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 8px;
+    padding: 8px 16px;
+    background: #4e75ff;
+    color: #ffffff;
+    border: none;
+    height: 40px;
+}
+
+button:hover,
+button:focus {
+  background-color: #6c8cff;
+}
+/* ============= TASK 1 STYLES ============= */
+
+#categories {
+  margin-left: 20px;
+}
+
+.item {
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  margin-bottom: 24px;
+}
+
+.item h2 {
+  margin-top: 0;
+}
+
+.item ul li {
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    border-radius: 8px;
+      border: solid #808080;
+      width: 360px;
+      height: 40px;
+      padding: 8px 16px 8px;
+}
+
+.item ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+
+/* ============= TASK 2 STYLES ============= */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0 42px;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+/* ============= TASK 4 STYLES ============= */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  margin-top: 8px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.04em;
+}
+
+.login-form button {
+  margin-top: 16px;
+  width: 86px;
+}
+
+
+/* ============= TASK 5 STYLES ============= */
+
+.widget {
+  text-align: center;
+}
+
+.change-color {
+  width: 148px;
+}
+
+/* ============= TASK 6 STYLES ============= */
+
+#controls > button:nth-child(odd) {
+  background-color: #FF4E4E;
+}
+
+#controls>button:nth-child(odd):hover,
+#controls>button:nth-child(odd):focus {
+  background-color: #FF7070;
+}
+
+#controls, #boxes {
+  padding: 32px;
+  background-color: #F6F6FE;
+}
+
+#controls {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+#controls > button {
+  width: 120px;
+  margin-left: 16px;
+}
+
+#controls > input {
+  width : 150px;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+}
